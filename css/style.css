@@ -1,0 +1,234 @@
+@import url(reset.css);
+.clear{
+    clear: both;
+}
+body{
+    font-family: Verdana;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    -webkit-user-select: none; 
+}
+#wrapper{
+    width: 640px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding-top: 40px;
+    margin-bottom: 30px;   
+    padding-bottom: 10px; 
+    box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+   border-radius:20px;
+   
+    
+}
+#grille_wrapper{
+    width: 565px;
+    height: 492px;
+    outline: 0px solid red;
+    margin: 0 auto;
+    
+}
+#col1,#col2,#col3,#col4,#col5,#col6,#col7{
+    width: 80px;
+    height: 492px;
+    float: left;
+    border: 0px solid #000;
+    cursor: pointer;
+    
+}
+.cellul{
+    height: 77px;
+    width: 80px;
+    border: 0px solid #000;
+    padding-top: 3px;
+}
+.red{
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-image: radial-gradient(#ff9f9f, #fc3323);
+    border: 1px solid red;
+    border-radius: 70px;
+    margin: 0 auto;
+}
+.blue{
+    width: 72px;
+    height: 72px;
+    display: block;
+     background-image: radial-gradient(#a6bbf9, #1d79e0);
+    border: 1px solid blue;
+    border-radius: 70px;
+    margin: 0 auto;
+
+}
+.no_active{
+    width: 72px;
+    height: 72px;
+    display: block;
+    box-shadow: 0 3px 3px #575555 inset; 
+    border: 1px solid #c7c7c7;
+    border-radius: 70px;
+    margin: 0 auto;
+}
+#pannel_control{
+    width: 574px;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .2);
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+#pannel_control p{
+    float: left;
+  color: rgba(0,0,0,0.6);
+text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+
+
+}
+#joueur1{
+    padding-top: 26px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2px;
+    margin: 15px;
+    text-align: center;
+}
+#joueur2{
+    padding-top: 26px;
+    height: 46px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2px;
+    margin: 15px;
+    text-align: center;
+}
+h1{
+    float: left;
+    width: 360px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 26px;
+    height: 60px;
+}
+#game_play{
+    width: 120px;
+    height: 37px;
+    cursor: pointer;
+    border: 0px solid #000;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    font: bold 20px Tahoma;
+    border-radius: 40px;
+    background: rgb(122,188,255);
+    background: -moz-linear-gradient(top,  rgb(122,188,255) 0%, rgb(96,171,248) 44%, rgb(64,150,238) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(122,188,255)), color-stop(44%,rgb(96,171,248)), color-stop(100%,rgb(64,150,238)));
+    background: -webkit-linear-gradient(top,  rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%);
+    background: -o-linear-gradient(top,  rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%);
+    background: -ms-linear-gradient(top,  rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%);
+    background: linear-gradient(to bottom,  rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+
+
+}
+
+#game_play:hover{
+     box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+#game_play:active{
+     box-shadow: 0 3px 3px #575555 inset;
+     font-size: 19px;
+}
+
+#game_restart{
+    width: 150px;
+    height: 37px;
+    cursor: pointer;
+    border: 0px solid #000;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    font: bold 20px Tahoma;
+    border-radius: 40px;
+    background: rgb(122,188,255);
+    background: -moz-linear-gradient(top,  rgb(122,188,255) 0%, rgb(96,171,248) 44%, rgb(64,150,238) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(122,188,255)), color-stop(44%,rgb(96,171,248)), color-stop(100%,rgb(64,150,238)));
+    background: -webkit-linear-gradient(top,  rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%);
+    background: -o-linear-gradient(top,  rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%);
+    background: -ms-linear-gradient(top,  rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%);
+    background: linear-gradient(to bottom,  rgb(122,188,255) 0%,rgb(96,171,248) 44%,rgb(64,150,238) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 );
+    color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+
+
+}
+#game_restart:hover{
+     box-shadow:
+   0 1px 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8),
+   0 0 40px rgba(0, 0, 0, .1) inset;
+}
+#game_restart:active{
+     box-shadow: 0 3px 3px #575555 inset;
+     font-size: 19px;
+}
+#fond {
+   position:absolute;
+   z-index:9000;
+   background-color:#000;
+   display:none;
+   border-radius: 10px;
+   top:0;
+}
+.popup {
+   position:fixed;
+   width:440px;
+   height:200px;
+   display:none;
+   z-index:9999;
+   padding:20px;
+   border-radius: 10px;
+   background-color: white;
+   border: 1px solid grey;
+}
+#modal {
+   width:300px;
+   height:200px;
+}
+form{
+	text-align:center;
+	margin-top:40px;
+}
+#jouerModal{
+	width:100px;
+	margin-left:5px;
+	box-shadow:1px 1px 1px #D83F3D;
+	cursor:pointer;
+	margin-top:20px;
+}
+
+#jouerModal:hover{
+	background-color:#FCDEDE;
+}
+
+#jouerModal:active{
+	background-color:#FCDEDE;
+	box-shadow:1px 1px 1px #D83F3D inset;
+}
